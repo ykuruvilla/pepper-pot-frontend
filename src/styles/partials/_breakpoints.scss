@@ -1,0 +1,14 @@
+$tablet-breakpoint: 768px;
+$desktop-breakpoint: 1280px;
+
+@mixin screen-medium {
+  @media screen and (min-width: $tablet-breakpoint) {
+    @content;
+  }
+}
+
+@mixin screen-large {
+  @media screen and (min-width: $desktop-breakpoint) {
+    @content;
+  }
+}
